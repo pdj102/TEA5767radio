@@ -7,6 +7,8 @@
  * Fxtal is 32.768kHz
  * 
  * Paul Johnson 27Mar2016 v002
+ *
+ * test comment
  */
 
 #ifndef TEA5767_h
