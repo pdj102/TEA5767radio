@@ -239,8 +239,10 @@ void checkKeyPress() {
 }
 
 void loop() {
+  // Read the TEA5767 status
   radio.read();
- 
+
+  // Check if a key has been pressed
   checkKeyPress();
 
   if (keyPress > 0) {
@@ -248,9 +250,9 @@ void loop() {
     keyPress=NO_KEY;
   }
 
+  // Update display
   updateLcdTopLine();
   updateLcdBottonLine();
 
   delay(100);
 }
-
